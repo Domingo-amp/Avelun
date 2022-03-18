@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>FENET</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="FENET es una plataforma para la gestion de solicitudes" />
+  <meta name="keywords" content="servicios, gestiones, clientes, proveedores"/>
+  <meta name="author" content="Systems Admins C.A" />
+  <meta name="copyright" content="Systems Admins C.A" />
+  <meta name="robots" content="index, follow">
+  <meta name="google" content="nositelinkssearchbox">
+
+
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	
+
+  <link rel="icon" type="image/png" href="../img/fe_vicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" type="text/css" media="all" href="../css/mediastyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/mediastyleMenu.css">
+  <script type="text/javascript" src="../jscripts/scripts.js"></script>
+
+
+
+<script
+ src="https://code.jquery.com/jquery-3.3.1.js"
+ integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+ crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+
+<style>
+		.steep1{
+			width:200px;
+			color:blue;
+		}
+		.master2{
+			color:red;
+		}
+		.master3{
+			color:yellow;
+			display:inline-block;
+			width:300px;
+			background-color:red;
+			font-size: 12px;
+			padding:22px 0px 22px 0px;
+		}
+
+		#banner{
+				height: 850px;
+			}
+
+		@media (max-width:700px){
+			#banner{
+				height: 1234px;
+			}
+
+			.master3{
+			color:yellow;
+			display:inline-block;
+			width:300px;
+			background-color:red;
+			font-size: 12px;
+			padding:11px 0px 11px 0px;
+			
+		}
+		}
+
+		/*Every long walk start with the first steps*/ 
+	</style>
+</head>
+
+<body>
+<div class="imagen-fondo"><!--Este div se cierra en banner.php-->
+
+
+
+
+<nav>
+	<div   style='text-align:center;'><img src="../img/logo3.png" height="70px;"></div>
+
+</nav>
+
+
+
+
+<div id="menuSmart">
+
+	<a href="#conocenos2"><div>Conocenos</div></a>
+	<hr>
+	<a href="#proveedor"><div>Proveedor</div></a>
+	<hr>
+	<a href="#escribenos"><div>Contactanos</div></a>
+	<hr>
+	<a href="#conocenos2"><div>Crear Cuenta</div></a>
+	<hr>
+	<a href="indexapp.php"><a href="#"><div>Iniciar Sesión</div></a></a>
+	<hr>
+</div>
+
+
+
+
+
+<div id="banner">
+<font color='yellow'><b>Registrate al Webinar</b></font>
+	 <font style='font-size:15px;'>
+	 <p>Te contaremos como funcion FENET en detalle y las soluciones que puedes encontrar, <br>FENET es una herramienta que puedes utilizar todos los dias donde te facilitaremos las cosas</p>
+	 
+	 </font>
+		
+		<div class='master3'>
+			<div><label>Nombres:</label></div>
+			<div><input type='text' class='steep1' id='nombre'></div>
+			<div><label>Pais:</label></div>
+			<div><input type='text' class='steep1' id='pais'></div>
+		</div>
+		
+		<div class='master3'>
+			<div><label>Telefono:</label></div>
+			<div><input type='text'  class='steep1' id='telefono'></div>
+			<div><label>Correo:</label></div>
+			<div><input type='text'  class='steep1' id='correo'></div>
+		</div>
+
+		<div style='margin-top:55px;'>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="width:300px; background-color: #b30000; border:0px;" onclick="register()">
+					Enviar Solicitud 
+			</button>
+		</div>
+
+		<div id="listaServicios" style="margin-top: 200px; cursor: pointer;" onclick="verServicios()">
+		<font class="tipo-letra-baner" style="font-size: 15px;">¿QUE PUEDES ENCONTRAR FENET?</font>
+		<a href="#listaServiciosFenet">
+			<img src="../img/servicios/arrow-down.png" width="33px;" id="arrowDown" class="show">
+		</a>		
+			<img src="../img/servicios/arrow-up.png" width="33px;" id="arrowup" class="hidden">
+		
+		</div>
+		
+
+		
+</div><!--Banner END-->		
+
+
+
+
+
+<div id="listaServiciosFenet" style="padding: 20px;" class="hidden">
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px;">
+			<img src="../img/servicios/enviosAereos.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Envios Aereos a todos los paises
+		</div>
+	</div>
+
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px;">
+			<img src="../img/servicios/envioMaritimo.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Envios Maritimos
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 18px; padding-left: 10px">
+			<img src="../img/servicios/rappi.png" width="80px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px; padding-left: 10px;">
+			Delivery de mercancia
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px;">
+			<img src="../img/servicios/almacen.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Almacenaje y Logistica
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px;">
+			<img src="../img/servicios/iss.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Investigacion y Rastreo
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px; padding-left: 33px;">
+			<img src="../img/servicios/google.png" width="33px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Busqueda y Posicionamiento
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px; padding-left: 25px;">
+			<img src="../img/servicios/compras.png" width="40px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Servicios de Compras
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 10px; padding-left: 20px;">
+			<img src="../img/servicios/ventas.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px;">
+			Servicio de Ventas
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 10px; padding-left: 20px;">
+			<img src="../img/servicios/realstate.png" width="70px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px; padding-left: 10px;">
+			Inversion Inmoviliaria
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 10px; padding-left: 20px;">
+			<img src="../img/servicios/taxi.png" width="70px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px; padding-left: 10px;">
+			Servicios de Taxis
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 10px; padding-left: 20px;">
+			<img src="../img/servicios/mototaxi.png" width="50px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 15px; padding-left: 10px;">
+			Servicios de Moto Taxis
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 15px; padding-left: 10px;">
+			<img src="../img/servicios/platzi.png" width="80px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 8px; padding-left: 10px;">
+			Cursos Profesionales Online
+		</div>
+	</div>
+
+	<div class="caja-servicio">
+		<div class="caja-servicio-img" style="padding-top: 10px; padding-left: 20px;">
+			<img src="../img/servicios/experiencias.png" width="60px">		
+		</div>
+		<div class="caja-servicio-text" style="padding-top: 8px; padding-left: 10px;">
+			Viajes, Hoteleria y Turismo
+		</div>
+	</div>
+	
+
+</div><!--Fin del div oculto lista de servicios-->
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro Exitoso</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+				<div style='text-align:justify; padding:30px 30px 30px 30px;' >
+					<font style='color:red;'>Genial!</font> Estas subscrito a FENET webinars, te contactaremos y te enviaremos informacion con el dia y la hora del evento.
+					<div style='text-align:center; margin-top:69px;'>
+						<font style='color:#034065;'>Gracias por subscribirte...</font>
+					</div>
+				</div>
+      
+			<div style='text-align:center;'>
+				<a href='http://fenet.com.ve/es/'>
+					<input type="submit" name="enviar_solicitud" value="¿Que Necesitas?" class="btn btn-primary" style="margin-top:30px; width:300px; background-color: #b30000; border:0px;">
+				</a>
+				</div>
+				
+		</form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div><!--Fin imagen de Fondo-->
+
+
+
+
+
+
+
+
+
+<footer><b>Systems Admins C.A Todos los Derechos Registrados</b></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	function register(){
+		 	var nombre= document.getElementById('nombre').value;
+			var telefono=document.getElementById('telefono').value;
+			var pais= document.getElementById('pais').value;
+			var correo=document.getElementById('correo').value;
+			var info = 'event-register.php?nombre='+nombre+'&telefono='+telefono+'&pais='+pais+'&correo='+correo;
+
+            var url = "event-register.php";
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            /*alert(this.responseText);*/
+		}
+	}
+		xhttp.open("GET", info , true);
+		//xhttp.open("POST", url, true);
+		//xhttp.setRequestHeader("Content-type", "application/vent-register.php");
+		//xhttp.setRequestHeader("Accept", "application/json");
+		xhttp.send();
+
+
+
+
+
+		/*
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				alert(this.responseText);
+			}
+		};
+		xhttp.open("POST", "demo_post2.asp", true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send("fname=Henry&lname=Ford");
+		
+*/
+
+
+
+
+
+
+	}
+</script>
+</body>
+</html>

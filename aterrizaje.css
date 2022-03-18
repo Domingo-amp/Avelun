@@ -1,0 +1,202 @@
+body{ background-color: black; color: white;}
+*{box-sizing: border-box;}
+
+.Avelun{
+    width: 50%;
+    height: auto;
+    background-color: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 50px;
+
+}
+
+
+.textocult{
+    display: none;
+}
+.Artemis{
+    width: 49%;
+    height: auto;
+    text-align: center;
+    background-color: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: none;
+    padding-left: 30px;
+    padding-right: 120px;
+}
+
+.ttile{
+    display: inline-block;
+    background-color: none;
+    margin-top: 80px;
+    margin-bottom: 50px;
+
+}
+
+h5{padding-left: 2%; padding-right: 2%; margin-bottom: 40px; text-align: initial;}
+
+.conten{
+    width: 100%;
+    text-align: center;
+    display: inline-block; 
+    margin-bottom: 20px; 
+    padding-right: 30px;
+}
+
+.conten img{
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.frase{
+    text-align: left;
+    margin-right: 0px;
+    font-size: 14px;
+    display: inline-block; 
+    width: 350px;
+}
+.space{margin-top: 0px;}
+.btn{display: inline-block; margin: 0 auto;}
+
+.hover:hover{
+    background-color: red;
+}
+
+#desapear{
+    display: block;
+}
+
+
+#btndesapear{
+    margin-top: 30px;
+    display: none;
+}
+
+#btndesapearDos{
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    display: none;
+}
+
+
+
+
+#desapearArtemis{
+    display: block;
+}
+
+
+#btndesapearArtemis{
+    margin-top: 30px;
+    display: none;
+}
+
+#btndesapearArtemisDos{
+    font-size: 30px;
+    margin-top: 30px;
+    display: none;
+    color: white;
+}
+
+@media (max-width:1050px){
+    .Avelun{
+        width: 50%;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-bottom: 100px;
+    
+    }
+    
+    .Artemis{
+        width: 49%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+
+@media (max-width:880px){
+    .textocult{
+        display: block;
+    }
+    .Avelun{
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .Artemis{
+        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .ttile{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+
+    #desapear{
+        display: none;
+    }
+    
+    #btndesapear{
+        display: block;
+    }
+
+    #btndesapearDos{
+        display: none;
+    }
+
+
+
+    #desapearArtemis{
+        display: none;
+    }
+    
+    #btndesapearArtemis{
+        display: block;
+    }
+
+    #btndesapearArtemisDos{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:600px){
+    .Avelun{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 30px;
+    
+    }
+    
+    .Artemis{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+    .frase{
+        text-align: none;
+        margin-right: 0px;
+        font-size: 14px;
+        display: inline-block; 
+        width: 100%;
+        text-align: center;
+    }
+
+    h5{text-align: center;}
+}

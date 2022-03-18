@@ -1,0 +1,89 @@
+
+
+body{
+	background-color: none;
+    margin: 0;
+}
+
+
+
+.oculto{
+    display: none;
+}
+
+
+#contenido{
+    text-align: center;
+    height: 450px;
+}
+
+#contenidoStock{
+    text-align: center;
+    height: 520px;
+}
+
+#indexLogoImg{
+    margin-top: 50px;
+}
+
+
+.botonSiguiente{
+    margin-top: 30px;
+    background-color: #169de3;
+    border-radius: 5px;
+    border: none;
+}
+
+.botonAtras{
+    margin-top: 30px;
+    background-color: #96c2d8;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.botonSiguiente2{
+    margin-top: 10px;
+    background-color: #169de3;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+#contenidoDatos{
+    text-align: center;
+    height: 300px;
+    margin-top:50px;
+}
+
+
+
+
+
+#artemisTitulo{
+    text-align: center;
+    font-size: 30px;
+    background-color: #b30000;
+    color: white;
+}
+
+#artemisBackground1 {
+    color:white;
+	height: 750px;
+	background-color: gray;
+	background-image: url('../img/artemis1.jpg');
+    background-size: 100%;
+
+}
+
+#artemisBackground2{
+    color:white;
+	height: 750px;
+	background-color: gray;
+	background-image: url('../img/artemis2.jpg');
+    background-size: 100%;
+
+}
+

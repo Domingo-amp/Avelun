@@ -1,0 +1,122 @@
+body{
+    margin:0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+/*Header*/
+.head{
+    background-color: none;
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+    padding-left: 180px;
+}
+.logo{
+    background-color: none;
+    height: 60px;
+    width: 100px;
+    float: left;
+    margin: 5px;
+}
+.slogan{
+    background-color:  none;
+    height: 60px;
+    width: 500px;
+    float: left;
+    margin: 5px;
+    font-size: 35px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/*Nav*/
+.menu{
+    text-align: center;
+    background-color:none;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    background: rgb(145, 56, 187);
+    color: white;
+}
+
+.item{
+    height: 35px;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+    float: right;
+    margin-right: 50px;
+}
+
+/*Content*/
+
+.titutlo{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.contenido{
+    text-align: center;
+    margin-top: 50px;
+    background-color: none;
+    width: 60%;
+    float: left;
+    height: 350px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.imagenBox{
+    text-align: center;
+    margin-top: 50px;
+    background-color: none;
+    width: 40%;
+    float: left;
+    height: 350px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.contentText{
+    width: 90%;
+    background-color: none;
+    height: 250px;
+    text-align: justify;
+    margin-left: 5%;
+}
+
+.btn{
+    text-align: right;
+}
+
+
+.avelun{
+    margin-top: 20px;
+    background-color: rgb(38, 55, 209);
+    background-image: url('luna.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30px;
+    float: left;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
